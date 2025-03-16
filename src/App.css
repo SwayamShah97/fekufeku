@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF0E5;
+}
+
+.homepage {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.homeTitle {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.gameTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.page {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.description {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.homedescription{
+  color: white;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.buttons {
+  display: inline-flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-title {
+  color: #FF8C00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.friend-image {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: #FFF0E5;
+  width: 350px;             /* slightly wider */
+  height: 700px;            /* increased height */
+  margin: 0 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card img.card-image {
+  width: 100%;
+  height: 400px;            /* more height for the image */
+  object-fit: contain;
+  margin: 20px 0px;
+}
+
+.home-content {
+  text-align: center;
+}
+
+:root {
+  --yellow: #FFE800;
+  --brown: #404040;
+  --blue: #1CD3F8;
+  --angle: 8px;
+  --angle-o: 4px;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Custom Button Style */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: var(--yellow);
+  color: var(--brown);
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: -6px 6px 0 var(--brown);
+  transition: all 0.15s linear;
+}
+
+.btn:hover {
+  top: 3px;
+  left: -3px;
+  box-shadow: -3px 3px 0 var(--brown);
+}
+
+.btn:hover::after {
+  top: 1px;
+  left: -2px;
+  width: var(--angle-o);
+  height: var(--angle-o);
+}
+
+.btn:hover::before {
+  bottom: -2px;
+  right: 1px;
+  width: var(--angle-o);
+  height: var(--angle-o);
+}
+
+.btn::after,
+.btn::before {
+  content: '';
+  position: absolute;
+  background-color: var(--brown);
+  transform: rotate(45deg);
+  transition: all 0.15s linear;
+  z-index: -1;
+}
+
+.btn::after {
+  top: 2px;
+  left: -4px;
+  width: var(--angle);
+  height: var(--angle);
+}
+
+.btn::before {
+  bottom: -4px;
+  right: 2px;
+  width: var(--angle);
+  height: var(--angle);
+}
+
+a.btn:active {
+  top: 6px;
+  left: -6px;
+  box-shadow: none;
+}
+
+a.btn:active::before {
+  bottom: 1px;
+  right: 1px;
+}
+
+a.btn:active::after {
+  top: 1px;
+  left: 1px;
+}
+
+.tryagain {
+  align-self: center;
+  width: 200px;
+  border: 1px solid #4A90E2;
+  border-radius: 3px;
+  background: yellow;
+  color: #4A90E2;
+  font-family: 'Varela Round', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  display: block;
+  padding: 15px 50px 15px 50px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.lowercase-display {
+  text-transform: none !important;
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.side-image {
+  height: 500px;            /* slightly less than full height */
+  width: 400px;        /* prevent width overflow */
+}
+
+.floating-icons-global {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-icon-global {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.6;
+  filter: brightness(1.4);
+  animation: float 10s ease-in-out infinite alternate, spin 20s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.input-field {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.input-field input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  background: transparent;
+  color: #111;
+  font-size: 1rem;
+}
+
+.input-field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+.input-field input:focus,
+.input-field input:valid {
+  border-color: #00dd22;
+}
+
+.input-field input:focus ~ label,
+.input-field input:valid ~ label {
+  font-size: 14px;
+  top: -24px;
+  color: #00dd22;
+}
+
+/* Custom submit button to match the style */
+.styled-submit {
+  padding: 12px 24px;
+  margin-top: 10px;
+  margin-right: 15px;
+  background-color: #00dd22;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  border-radius: 4px;
+}
+
+.styled-submit:hover {
+  background-color: #00bb1a;
+}
